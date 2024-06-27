@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    
+}
+
+body{
+    background-color: rgb(251, 231, 205);
+    height: 100vh;
+    width: 100vw;
+    position: static;
+    overflow-x: hidden;
+}
+
+header{
+    background-color:antiquewhite;
+    height: 100px;
+    width: 100%;
+    position:sticky ;
+    top: 0px;
+    z-index: 1000;
+}
+
+footer{
+    background-color:   rgb(253, 220, 177);
+    height: 400px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 450;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 10px 0px 10px;
+    cursor: pointer;
+}
+.logo div{
+    display: flex;
+    
+}
+.juice-cup{
+    height: 40px;
+    width: 35px;
+}
+.nav-link{
+    display: flex;
+    flex-direction: row;
+}
+.nav-link div{
+    padding: 10px 30px 10px 0px;
+    
+    
+}
+.nav-link div a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    cursor: default;
+}
+
+.usericon{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.nav-link .account{
+    background-color: rgba(246, 228, 203, 1);
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    margin: 10px 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    justify-content: left;
+}
+.nav-link .account .accountname{
+    background-color: rgb(246, 228, 203);
+    border: none;
+    font-size: 16px;
+
+    font-weight: 400px;
+    cursor: pointer;
+    
+}
+.account:hover{
+    background-color: rgba(246, 228, 203, 0.5);
+    transition: all 0.4s linear;
+    
+}
+.accountname:hover{
+    background-color: rgba(246, 228, 203, 0.5);
+    color:rgb(134, 87, 5);
+    transition: all 0.4s linear;
+}
+
+.nav-link div a:hover{
+    background-color: rgba(246, 228, 203, 0.5);
+    color:rgb(134, 87, 5);
+    transition: all 0.3s linear;
+}
+
+.btn{
+    height: 27px;
+    width: 25px;
+    background-color: rgb(30, 18, 2);
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    display: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 3px antiquewhite; ;
+}
+.box{
+    height: 5px;
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+}
+
+.btn:hover{
+    background-color:rgb(134, 87, 5);
+}
+
+@media (max-width:1000px) {
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction:column;
+        background-color:antiquewhite;
+        
+    }
+    .nav-link{
+        margin: 10px;
+        margin-top: 50px;
+        padding: 10px;
+        display: none;
+    }
+    .nav-link div{
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        justify-content: center;
+            }
+    .nav-link div a{
+        text-align: center;
+    }
+    .account{
+        margin: 30px 0px;
+        margin-top: 10px;
+        justify-content: center;
+        margin-left: 0px;
+        
+    }
+    body{
+        width: 100vw;
+        height: fit-content;
+    }
+    .btn{
+        display: flex;
+    }
+
+    .nav-link.active{
+        display: flex;
+    }
+    .Outer .footer-logo{
+        flex-direction: row;
+        align-items: center;
+        margin: 0px 20px 0px 10px;
+        padding: 0px;
+        margin-right: auto;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        /* transition: all 0.3s linear; */
+    }
+    
+    
+    .footer-logo .name{
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.1;
+        /* transition: all 0.6s linear; */
+    }
+    .icons{
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right:  35%;
+        /* transition: all 0.6s linear; */
+    }   
+    .footer-logo .pic{
+        height: 35px;
+        width: 29px;
+        /* transition: all 0.6s linear; */
+
+    }
+
+    .footer-logo .pic .juice-cup{
+        height: 25px;
+        width: 25px;
+        /* transition: all 0.6s linear; */
+    }
+}
+
+
+.Outer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.Outer .sub {
+    /* background-color: aqua; */
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 10px;
+    height: 30px;
+
+}
+
+.Outer .sub a{
+    text-decoration: none;
+    color: rgb(77, 44, 1);
+    text-align: center;
+    cursor: default;
+}
+
+.icons{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    order:0;
+}
+
+.icons .sub-icons{
+    height: 20px;
+    width: 20px;
+    margin: 20px 15px 20px 20px;
+}
+
+.icons .sub-icons img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: row;
+    margin: 80px 10px 0px 10px;
+}
+
+.logo div{
+    display: flex;
+}
+
+.Outer .footer-logo{
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 20px 0px 10px;
+    padding: 0px;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+
+
+.footer-logo .name{
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.footer-logo .juice-cup{
+    width: 35px;
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.icons .sub-icons img:hover{
+    opacity: 0.7;
+    transition: all 0.3s linear;
+}
+
+.Outer .sub a:hover{
+    color: rgb(23, 13, 1);
+    opacity: 1;
+}
+.content{
+    background-color: aqua;
+    width: 100%;
+    height: 650px;
+    margin-bottom: 2px;
+    
+}
